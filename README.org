@@ -1,0 +1,9 @@
+montReal R user group funds
+
+This repository logs the finances of the montReal R user group.
+
+As of 2 March 2015, Toby Dylan Hocking is the treasurer (person in
+charge of saving and spending the money).
+
+New transactions can be added to transactions.csv, and the time series
+plot can be updated by typing make.
