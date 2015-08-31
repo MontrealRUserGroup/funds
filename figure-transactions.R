@@ -20,7 +20,9 @@ ggplot(transactions, aes(Date, CAD.balance))+
   geom_point()+
   geom_line()+
   scale_x_datetime(limits=date.range)+
-  geom_text(aes(label=CAD.balance, hjust=-0.1), data=current)
+  geom_text(aes(label=sprintf("%.02f$CAD", CAD.balance)),
+            vjust=1.5,
+            data=current)
 
 pdf("figure-transactions.pdf")
 print(moneyPlot)
